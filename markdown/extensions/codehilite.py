@@ -153,9 +153,6 @@ class CodeHilite:
             if m.group('path'):
                 # path exists - restore first line
                 lines.insert(0, fl)
-            if m.group('shebang'):
-                # shebang exists - use line numbers
-                self.linenos = True
         else:
             # No match
             lines.insert(0, fl)
